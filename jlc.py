@@ -16,11 +16,11 @@ class Application(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        self.dialog_button1 = tk.Button(self, text='JLC DB open', command=jlc_open, width=60)
+        self.dialog_button1 = tk.Button(self, text='JLC DB open', command=jlc_open, fg='black', bg='yellow', width=60)
         self.dialog_button1.pack(anchor=tk.NW)
-        self.dialog_button2 = tk.Button(self, text='Digi-Key BOM open', command=dk_open, width=60)
+        self.dialog_button2 = tk.Button(self, text='Digi-Key BOM open', command=dk_open, fg='black', bg='yellow green', width=60)
         self.dialog_button2.pack(anchor=tk.NW)
-        self.dialog_button3 = tk.Button(self, text='Result DB dump', command=db_dump, width=60)
+        self.dialog_button3 = tk.Button(self, text='Result DB dump', command=db_dump, fg='black', bg='orange', width=60)
         self.dialog_button3.pack(anchor=tk.NW)
 
 def jlc_open():
